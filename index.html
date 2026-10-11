@@ -17,27 +17,60 @@
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
   <header class="site-header" id="top">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Pavyntrix Studio home">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-        <span class="brand-name">pavyntrix<span>.</span></span>
+  <nav class="nav wrap" aria-label="Main navigation">
+
+    <!-- Pavyntrix Studio Logo -->
+    <a class="brand" href="#top" aria-label="Pavyntrix Studio home">
+      <img
+        src="logo.png"
+        alt="Pavyntrix Studio"
+        class="brand-logo"
+      >
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="nav-links"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="#work">Demo work</a>
+      <a href="#pricing">Packages</a>
+      <a href="#process">Process</a>
+      <a href="#next-chapter">Why Pavyntrix</a>
+      <a class="nav-cta" href="#contact">
+        Let’s talk <span aria-hidden="true">↗</span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#work">Demo work</a>
-        <a href="#pricing">Packages</a>
-        <a href="#process">Process</a>
-        <a href="#next-chapter">Why Pavyntrix</a>
-        <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
-      </div>
-      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
-        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/></svg>
-      </button>
-    </nav>
-  </header>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-label="Switch to light theme"
+      title="Toggle theme"
+    >
+      <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+      </svg>
+
+      <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/>
+      </svg>
+    </button>
+
+  </nav>
+</header>
+
 
   <main id="main-content">
     <section class="hero wrap section-pad" aria-labelledby="hero-title">
